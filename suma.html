@@ -10,19 +10,63 @@
     
     <div class="container">
         <br>
-        <h1>Suma de 2 números</h1>
-        <br>
+        <h1 class="text-center">Operaciones Básicas</h1>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <br>
+                <h2>Suma de 2 números</h2>
+                <br>
 
-        <label for="txt_primer_numero">Ingrese el primer número</label>
-        <input class="form-control" type="number"id=txt_primer_numero>
-        <br>
-        <label for="txt_segundo_numero">Ingrese el segundo número</label>
-        <input class="form-control" type="number"id=txt_segundo_numero>
-        <br>
-        <button class="btn btn-primary">Sumar</button>
+                <label for="psuma">Ingrese el primer número</label>
+                <input class="form-control" type="number"id=psuma>
+                <br>
+                <label for="ssuma">Ingrese el segundo número</label>
+                <input class="form-control" type="number"id=ssuma>
+                <br>
+                <button class="btn btn-primary " onclick="calcular_Suma()">Sumar</button>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <br>
+                <h2>Resta de 2 números</h2>
+                <br>
 
+                <label for="presta">Ingrese el primer número</label>
+                <input class="form-control" type="number"id=presta>
+                <br>
+                <label for="sresta">Ingrese el segundo número</label>
+                <input class="form-control" type="number"id=sresta>
+                <br>
+                <button class="btn btn-danger" onclick="calcular_Resta()">Restar</button>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <br>
+                <h2>Multiplicar 2 números</h2>
+                <br>
+
+                <label for="pmul">Ingrese el primer número</label>
+                <input class="form-control" type="number"id=pmul>
+                <br>
+                <label for="smul">Ingrese el segundo número</label>
+                <input class="form-control" type="number"id=smul>
+                <br>
+                <button class="btn btn-dark" onclick="calcular_Multiplicacion()">Multiplicar</button>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <br>
+                <h2>Dividir 2 números</h2>
+                <br>
+                <label for="pdiv">Ingrese el primer número</label>
+                <input class="form-control" type="number"id=pdiv>
+                <br>
+                <label for="sdiv">Ingrese el segundo número</label>
+                <input class="form-control" type="number"id=sdiv>
+                <br>
+                <button class="btn btn-success" onclick="calcular_Division()">Dividir</button>
+            </div>
+        </div>
     </div>
     
     <script src="./public/lib/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/script.js"></script>
 </body>
 </html>
